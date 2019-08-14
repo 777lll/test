@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: calc(100*100vw/600);
+}
+body{
+    font-size: 0.3rem;
+}
+
+/* 头部的设置 */
+.header{
+    position: fixed;
+    /* 固定定位于头部 */
+    left: 0;
+    top: 0;
+    background-color: #F2F2F2;
+    width: 100%;
+    z-index: 99;
+}
+.header-con1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 0.8rem;
+    position: relative;
+}
+.header-con1 div{
+   
+    height: 0.25rem;
+}
+
+.header-img1{
+    
+    width: 0.44rem;
+    height: 0.25rem;
+   position: absolute;
+   left: 0.4rem;
+   top: 0.4rem;
+}
+.header-img3{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    left: 5.2rem;
+}
+.header-img2{
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    left: 1.1rem;
+    top: 0.35rem;
+
+
+}
+.header-con1 input{
+    width: 4.3rem;
+    height: 0.52rem;
+    border: 0;
+    color: gray;
+    font-size: 0.3rem;
+}
+.header-con2{
+    font-size: 0.22rem;
+    color: rgb(116, 116, 116);
+    display: flex;
+    position: relative;
+    
+}
+.header-con2 div{
+    padding: 0.1rem 0;
+    margin:  0 0.2rem;
+    flex-shrink: 0;
+}
+.header-con2 div:first-child{
+    color: rgb(237, 91, 0);
+    border-bottom: 0.02rem solid rgb(237, 91, 0);
+}
+
+/* .content{
+    height: 200rem;
+    background-color: #ccc;
+    margin-top: 1.3rem;
+} */
+.header-con2-img{
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    left: 5.5rem;
+    top:0.1rem;
+    /* top: 1.3rem; */ 
+}
+
+
+/* 滚动图片的设置 */
+.header2-img{
+    width: 6rem;
+    height:4rem;
+    overflow: hidden;
+    /* animation: mymove 10s infinite; */
+    position: relative;
+}
+.header2-img li{
+    list-style: none;
+    float: left;
+}
+ul.header2-img-ul{
+        width: 18rem;
+        position: absolute;
+        left: 0;
+        top: 1.3rem;
+        animation: mymove 10s infinite;
+    }
+
+.header2-img-1{
+    width: 6rem;
+    height: 3rem;
+}
+
+@keyframes mymove{
+ 0%,27%{
+     left: 0;
+    
+    }
+        34%,64%{
+    left: -6rem;
+        }
+    74%,100%{
+    left: -12rem;
+}
+}
+/* 下面图片的设置 */
+.content-img-tb{
+    position: relative;
+}
+.content-img-tb-1-img{
+    width: 1.2rem;
+    height: 1.26rem;
+}
+.content-img-tb-1{
+    text-align: center;
+    /* position: absolute; */
+    
+    /* width: 6rem;
+    height: 1.26rem; */
+}
+.content-img-tb-top{
+    width: 6rem;
+    height: 1.26rem;
+    display: flex;
+    /* margin-left:-0.3rem; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.content-img-tb-2-img{
+    width: 1.2rem;
+    height: 1.26rem;
+}
+.content-img-tb-1{
+    text-align: center;
+    /* position: absolute; */
+    
+    /* width: 6rem;
+    height: 1.26rem; */
+}
+.content-img-tb-top-2{
+    width: 6rem;
+    height: 1.26rem;
+    display: flex;
+    /* margin-left:-0.3rem; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+/* 图标下面图片的设置 */
+div.content-img-three{
+    width: 6rem;
+    height: 4.2rem;
+    position: relative;
+    box-sizing: border-box;
+}
+.content-img-three-1{
+    width: 2.98rem;
+    height: 4.2rem;
+    left: 0;    
+    box-sizing: border-box;
+}
+.content-img-three-2{
+    width: 2.98rem;
+    height: 2.1rem;
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    box-sizing: border-box;
+}
+
+
+
+.content-img-four{
+    width: 6rem;
+    height: 2.1rem;
+    /* position: absolute;
+    top:6rem; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+.content-img-four-1-img{
+    width: 2.4rem;
+    height: 2.1rem;
+    /* position: absolute;
+   top: 0.2rem; */
+}
+.content-img-five{
+    width: 6rem;
+    height: 2.33rem;
+}
+.content-img-six{
+    width: 6rem;
+    height: 3.66rem;
+}
+
+.content-img{
+    width: 2.86rem;
+    height: 2.33rem;
+}
+
+.content-text2{
+    font-size: 0.2rem;
+    color: rgba(0,0,0,.54);
+}
+.content-span1{
+    color: #ea625b;
+}
+.content-span2{
+    color: #ea625b;
+    font-size: 0.18rem;
+}
+.content-span3{
+    color: rgba(0,0,0,.54);
+    font-size: 0.18rem;
+}
+.content-btn{
+    color: #fff;
+    background-color: #ea625b;
+    width: 1.66rem;
+    height: 0.49rem;
+    text-align: center;
+    line-height: 0.49rem;
+    font-size: 0.2rem;
+    font-weight: bold;
+    border-radius: 0.05rem;
+    margin: 0 auto;
+}
+.content-item{
+    text-align: center;
+    width: 2.85rem;
+    height: 4.07rem;
+}
+.content{
+    display: flex;
+    padding: 0.1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+div.content-bottom{
+    position: fixed;
+    bottom: 0;
+    width: 0.2rem;
+    height: 0.2rem;
+}
